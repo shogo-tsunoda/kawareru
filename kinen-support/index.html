@@ -1,11 +1,178 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>禁煙サポート - KAWARERU</title>
+    <meta name="description" content="禁煙の継続時間、節約できた金額、健康状況を可視化。あなたの禁煙を支える禁煙サポートアプリ。">
+
+    <!-- Favicon / Icon Full Set -->
+    <meta name="msapplication-square70x70logo" content="assets/site-tile-70x70.png">
+    <meta name="msapplication-square150x150logo" content="assets/site-tile-150x150.png">
+    <meta name="msapplication-square310x150logo" content="assets/site-tile-310x150.png">
+    <meta name="msapplication-square310x310logo" content="assets/site-tile-310x310.png">
+    <meta name="msapplication-TileColor" content="#0d9488">
+    <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="assets/favicon.ico">
+    <link rel="icon" type="image/vnd.microsoft.icon" href="assets/favicon.ico">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon-180x180.png">
+
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/android-chrome-512x512.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/icon-16x16.png">
+    <link rel="manifest" href="assets/manifest.json">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap');
+        body { font-family: 'Noto Sans JP', sans-serif; }
+        .hero-shadow { filter: drop-shadow(0 20px 30px rgba(0,0,0,0.1)); }
+    </style>
 </head>
-<body>
-    禁煙サポート
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+
+    <!-- Header Navigation -->
+    <header class="max-w-5xl mx-auto py-4 md:py-6 px-6 flex justify-between items-center">
+        <div class="flex items-center gap-2">
+            <span class="font-bold text-xl tracking-wider text-slate-900 uppercase">禁煙<span class="text-teal-600">サポート</span></span>
+        </div>
+
+        <nav class="hidden md:flex gap-8 text-sm font-medium text-slate-500">
+            <a href="#features" class="hover:text-teal-600 transition tracking-tight">特徴</a>
+            <a href="/terms" class="hover:text-teal-600 transition tracking-tight">利用規約</a>
+            <a href="/privacy" class="hover:text-teal-600 transition tracking-tight">プライバシー</a>
+            <a href="mailto:support@example.com" class="hover:text-teal-600 transition tracking-tight">お問い合わせ</a>
+        </nav>
+
+        <!-- Mobile Inquiry Icon Only -->
+        <a href="mailto:support@example.com" class="md:hidden text-slate-400">
+            <i data-lucide="mail" class="w-6 h-6"></i>
+        </a>
+    </header>
+
+    <!-- Main Hero Visual -->
+    <main>
+        <section class="max-w-5xl mx-auto px-4 pt-2 md:pt-4">
+            <div class="hero-shadow relative w-full max-w-[600px] mx-auto aspect-square rounded-[2rem] overflow-hidden border-4 border-white mb-8 md:mb-12">
+                <img src="assets/first-view-image.png" alt="禁煙の成果を可視化して自分を変える" class="w-full h-full object-cover">
+            </div>
+
+            <div class="text-center px-4 max-w-3xl mx-auto">
+                <h1 class="text-3xl md:text-5xl font-black text-slate-900 leading-tight mb-8 tracking-tighter">
+                    <span class="text-teal-600 underline decoration-teal-200 underline-offset-8">これからの自分を変える。</span>
+                </h1>
+
+                <!-- Download Buttons Area -->
+                <div class="flex flex-col items-center gap-6 mb-16">
+                    <div class="flex flex-row justify-center items-center gap-3 md:gap-6">
+                        <!-- App Store (Pending Review) -->
+                         <!-- <a href="https://play.google.com/store/apps/details?id=YOUR_APP_ID" class="h-[44px] md:h-[56px] hover:scale-105 transition-transform active:scale-95">
+                            <img src="../assets/app-store-badge.png" alt="App Storeからダウンロード" class="h-full">
+                        </a> -->
+
+                        <!-- Google Play -->
+                        <a href="https://play.google.com/store/apps/details?id=YOUR_APP_ID" class="h-[44px] md:h-[56px] hover:scale-105 transition-transform active:scale-95">
+                            <img src="../assets/google-play-badge.png" alt="Google Playで手に入れよう" class="h-full">
+                        </a>
+                    </div>
+
+                    <div class="space-y-2">
+                        <p class="text-[10px] text-slate-400 leading-relaxed max-w-md mx-auto">
+                            Apple および Apple ロゴは米国その他の国で登録された Apple Inc. の商標です。<br>App Store は Apple Inc. のサービスマークです。
+                        </p>
+                        <p class="text-[10px] text-slate-400 leading-relaxed max-w-md mx-auto">
+                            Google Play および Google Play ロゴは、Google LLC の商標です。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="bg-white border-y border-slate-100 py-24 px-6">
+            <div class="max-w-5xl mx-auto grid md:grid-cols-3 gap-16 text-center">
+                <div class="flex flex-col items-center">
+                    <div class="w-14 h-14 bg-teal-50 text-teal-600 rounded-3xl flex items-center justify-center mb-6">
+                        <i data-lucide="timer" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-3">継続時間を可視化</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed">吸わなかった時間を秒単位で。積み重ねを実感できます。</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="w-14 h-14 bg-teal-50 text-teal-600 rounded-3xl flex items-center justify-center mb-6">
+                        <i data-lucide="coins" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-3">節約できた金額</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed">買わなかったタバコ代を可視化。禁煙の金銭的メリットを実感できます。</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="w-14 h-14 bg-teal-50 text-teal-600 rounded-3xl flex items-center justify-center mb-6">
+                        <i data-lucide="shield-check" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-3">安心のデータ管理</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed">データはあなたの端末内だけ。プライバシーを厳守します。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Emotional Message Card -->
+        <section class="max-w-5xl mx-auto px-4 py-24">
+              <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-5xl font-extrabold tracking-tight text-slate-800">
+                これから禁煙を始めるあなたへ
+                </h2>
+            </div>
+            <div class="relative bg-white border border-teal-100 rounded-[2.5rem] p-10 md:p-20 shadow-sm overflow-hidden text-center">
+                <div class="absolute -top-10 -right-10 text-teal-50 opacity-50">
+                    <i data-lucide="quote" class="w-48 h-48"></i>
+                </div>
+                <div class="relative z-10 max-w-2xl mx-auto">
+                    <blockquote class="text-2xl md:text-4xl font-bold text-slate-800 leading-tight mb-8 tracking-tighter">
+                        もし一本、吸ってしまっても。<br>
+                        それまでの「吸わなかった時間」は、<br>
+                        <span class="text-teal-600">決してゼロにはなりません。</span>
+                    </blockquote>
+
+                    <p class="text-slate-500 text-base md:text-xl leading-relaxed">
+                        禁煙は自分を責めるためのものではなく、<br class="md:hidden">新しい自分に変わるための挑戦です。<br>
+                        本アプリはあなたの「変わる」をサポートします。
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Area -->
+    <footer class="bg-slate-900 text-slate-400 py-16 px-6 text-center">
+        <div class="max-w-4xl mx-auto flex flex-col items-center gap-10">
+            <nav class="flex flex-wrap justify-center gap-8 text-[11px] md:text-xs font-bold uppercase tracking-[0.2em]">
+                <a href="/terms" class="hover:text-teal-400 transition">利用規約</a>
+                <a href="/privacy" class="hover:text-teal-400 transition">プライバシーポリシー</a>
+                <a href="mailto:support@example.com" class="hover:text-teal-400 transition">お問い合わせ</a>
+            </nav>
+
+            <div class="space-y-4">
+                <p class="text-[10px] leading-relaxed max-w-sm opacity-50 mx-auto">
+                    本アプリは生活習慣改善をサポートするものであり、医療行為に代わるものではありません。健康に関する懸念がある場合は、必ず専門医にご相談ください。
+                </p>
+                <p class="text-[10px] tracking-widest uppercase">&copy; 2026 KAWARERU. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Lucideアイコンの初期化
+        lucide.createIcons();
+    </script>
 </body>
 </html>
